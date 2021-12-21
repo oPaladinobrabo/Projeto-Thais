@@ -1,0 +1,82 @@
+﻿@{
+    ViewData["Title"] = "Contato";
+}
+<link rel="stylesheet" href="~/css/style2.css" />
+<h1>@ViewData["Title"]</h1>
+
+<body>
+    <form asp-action="Create">
+        <div id="contato">
+            <p>
+                <h5>Nesta área você poderá entrar em contato por e-mail</h5>
+            </p>
+            <p>
+                <h5>Obs: Certifique-se de que o cliente optou por receber e-mails da agência</h5>
+            </p>
+            <p>
+                <h5>agenciaviva@recode.org.br </h5>
+            </p>
+
+        </div>
+
+        <div>
+            <p>
+                
+
+
+
+
+            </p>
+
+          
+        </div>
+
+
+        <div asp-validation-summary="ModelOnly" class="text-danger">Nome</div>
+        <div class="form-group w-50 p-3">
+            <label for="Nome" class="control-label">Nome</label>
+            <input for="Nome" class="form-control" />
+        </div>
+        <div class="form-group  w-50 p-3">
+            <label for="Telefone" class="control-label">E-mail</label>
+            <input for="Telefone" class="form-control" />
+        </div>
+        <div class="form-group  w-50 p-3">
+            <label for="" class="control-label">Assunto</label>
+            <p>
+            <textarea id="assunto" name="assunto" style="height:170px" width="170px"></textarea>
+            </p>
+        </div>
+        <div class="form-group">
+
+
+
+            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#ModalCentralizado">
+                Enviar
+            </button>
+            <div class="modal fade" id="ModalCentralizado" tabindex="-1" role="dialog" aria-labelledby="TituloModalCentralizado" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="TituloModalCentralizado">Viva Viagens</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            E-mail enviado com sucesso!
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+        
+
+        </div>
+    </form>
+</body>

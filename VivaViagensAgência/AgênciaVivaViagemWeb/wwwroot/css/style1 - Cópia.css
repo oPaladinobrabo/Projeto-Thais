@@ -1,0 +1,26 @@
+﻿body {
+    background-image: url("/img/travel.jpg");
+    background-size: cover;
+
+}
+
+.jumbotron {
+    /*background-color:bisque;*/
+    background-image:url("/img/gradient2.jpg");
+    background-size: cover;
+    font-weight:bold;
+
+}
+
+.carousel-item {
+    background-position: center;
+
+}
+
+.h4 {
+    color:brown;
+
+
+}
+
+
